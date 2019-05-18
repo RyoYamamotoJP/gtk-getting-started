@@ -5,7 +5,7 @@ LDFLAGS = `pkg-config --libs gtk+-3.0`
 %: %.c
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
-all: example-0
+all: example-0 example-1
 
 clean:
-	rm -f example-0
+	rm -f example-0 example-1
